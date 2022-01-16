@@ -1,0 +1,51 @@
+@import 'fonts';
+
+html{
+    box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before{
+    box-sizing: inherit;
+}
+
+body{
+    font-size: 16px;
+    overflow-x: hidden;
+    @extend %manropeRegular;
+}
+
+li{
+    text-decoration: none;
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+li{
+    margin: 0;
+    padding: 0;
+}
+
+
+$black : #18191F;
+$darkBlue: #001d30;
+$lightBlue: #2296F9;
+$blue : #0096FF;
+$white: #fff;
+$dark : #000;
+$lightDark : #999;
+$lightBlack: #666;
+$cyan : #51eeeeee;
+

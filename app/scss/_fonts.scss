@@ -1,0 +1,88 @@
+@font-face {
+    font-family: 'Manrope';
+    font-weight: 700;
+    font-display: swap;
+    src: url('../fonts/Manrope-Bold.woff2') format('woff2'),
+    url('../fonts/Manrope-Bold.woff') format('woff');
+    
+}
+%manropeBold{
+    font-family: 'Manrope';
+    font-weight: 700;
+}
+
+
+
+@font-face {
+    font-family: 'Manrope';
+    font-weight:  800;
+    src: url('../fonts/Manrope-SemiBold.woff2') format('woff2'),
+    url('../fonts/Manrope-SemiBold.woff') format('woff'),
+}
+%manropeSemiBold{
+    font-family: 'Manrope';
+    font-weight: 800;
+}
+
+@font-face {
+    font-family: 'Manrope';
+    font-weight: 400;
+    src: url('../fonts/Manrope-Regular.woff2') format('woff2'),
+         url('../fonts/Manrope-Regular.woff') format('woff'),
+}
+%manropeRegular{
+    font-family: 'Manrope';
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Helvetica';
+    font-weight: 700;
+    src: url('../fonts/Helvetica-Bold.woff2') format('woff2'),
+         url('../fonts/Helvetica-Bold.woff') format('woff'),
+}
+%helvetica{
+    font-family: 'Helvetica';
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'Helvetica-Neue';
+    font-weight: 700;
+    src: url('../fonts/ofont.ru_Helvetica-Neue.woff2') format('woff2'),
+         url('../fonts/ofont.ru_Helvetica-Neue.woff') format('woff'),
+}
+%helveticaNeue{
+    font-family: 'Helvetica';
+    font-weight: 700;
+}
+
+
+@font-face {
+    font-family: 'Roboto';
+    font-weight: 400;
+    src: url('../fonts/Roboto-Regular.woff2') format('woff2'),
+         url('../fonts/Roboto-Regular.woff') format('woff'),
+}
+%roboto{
+    font-family: 'Roboto';
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Rubik';
+    font-weight: 300;
+    src: url('../fonts/Rubik-Light.woff2') format('woff2'),
+         url('../fonts/Rubik-Light.woff') format('woff'),
+}
+%rubik{
+    font-family: 'Rubik';
+    font-weight: 300;
+}
+
+
+
+
+
+
+

@@ -1,0 +1,1153 @@
+@import 'fonts';
+@import 'global';
+
+
+.preloader{
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 0;
+    top: 0;
+    background: $darkBlue;
+    height: 100%;
+    width: 100%;
+    z-index: 9999;
+    animation: changeBg 4s linear infinite;
+}
+
+
+@keyframes changeBg{
+    to{
+        filter: hue-rotate(360deg)
+    }
+}
+.loader{
+   width: 150px;
+   height: 150px;
+   background: linear-gradient(to top, $darkBlue 40%, $cyan);
+   border-radius: 50%;
+   animation: rotate 1s linear infinite;
+   position: relative;
+   z-index: 99999;
+   &::before{
+       content: '';
+       position: absolute;
+       background: $darkBlue;
+       inset: 20px 20px 0 0;
+       border-radius: 50%;
+       animation-delay: .5s;
+   }
+   &::after{
+       content: '';
+       position: absolute;
+       top: 50px;
+       right: -8px;
+       width: 40px;
+       height: 40px;
+       background: $cyan;
+       border-radius: 50%;
+       box-shadow: 0 0 5px $cyan,0 0 25px $cyan,0 0 50px $cyan,0 0 75px $cyan;
+       animation-delay: .5s;
+   }
+}
+
+@keyframes rotate{
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+
+
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 26px 125px;
+    border: 1px solid $white;
+    box-shadow: 0px 1px 0px #E5E9F2;
+    .menu-btn{
+        display: none;
+    }
+    .menu{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 36px;
+        transition: all  0.3s ease-in-out;
+      
+        a{
+            font-size: 14px;
+            line-height: 20px;
+            color: $black;
+            @extend %manropeBold;
+            position: relative;
+                &::before{
+                    position: absolute;
+                    content: '';
+                    bottom: -8px;
+                    height: 3px;
+                    width: 100%;
+                    background: rgb(241, 135, 135);
+                    transform: scaleX(0);
+                    transform-origin: center;
+                    transition: transform .3s linear;
+                }
+                &:hover::before{
+                    transform: scaleX(1);
+                    transform-origin: left;
+                }
+                
+           
+        }
+    }
+    &-logo{
+        img{
+            width: 146px;
+            height: 28px;
+            position: relative;
+            right: 10px;
+        }
+    }
+    &-links{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 14px;
+        &__item{
+            background: #f2f2f2;
+            border-radius: 50%;
+            padding: 8px;
+        }
+        &__item:nth-child(2){
+            padding: 8px 12px;
+        }
+        &__item:nth-child(3){
+            padding: 10px 9px;
+        }
+        &__item:nth-child(4){
+            padding: 10px 8px;
+        }
+    }
+}
+
+// Header End
+
+.section-dental{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 179px 125px 116px 125px;
+    margin-bottom: 108px;
+    gap: 69px;
+    position: relative;
+    overflow: hidden;
+    &__title{
+        font-size: 25px;
+        line-height: 34px;
+        letter-spacing: -0.376923px;
+        color: $blue;
+        padding-bottom: 16px;
+        @extend %manropeRegular;
+    }
+    &__text{
+        width: 540px;
+        font-size: 40px;
+        line-height: 42px;
+        color: $black;
+        padding-bottom: 16px;
+        @extend %manropeSemiBold;
+    }
+    &__subtext{
+        font-size: 18px;
+        line-height: 32px;
+        color: $black;
+        @extend %manropeRegular;
+        width: 540px;
+        padding-bottom: 22px;
+    }
+    &__link{
+        font-size: 20px;
+        line-height: 30px;
+        text-align: center;
+        padding: 17px 32px;
+        border-radius: 10px;
+        background: $blue;
+        color: $white;
+        @extend %manropeBold;
+        &:hover{
+            box-shadow: 0 0 15px #00c9e0, 0 0 30px #00c9e0, 0 0 45px #00c9e0, 0 0 60px #00c9e0;
+            transition: all 0.3s;
+            
+        }
+    }
+    &__img{
+        background: $blue;
+        width: 740px;
+        height: 740px;
+        border-radius: 50%;
+        position: absolute;
+        right: -171px;
+        top: -212px;
+        img{
+            position: absolute;
+            top: 280px;
+            right: 207px;
+            border-radius: 8px;
+            // transform: rotate(-7deg);
+        }
+
+    }
+}
+
+// Section Dental End
+
+.section-call{
+    text-align: center;
+    padding: 55px 0 60px 0;
+    background: #F0F6FB;
+    span{
+        color: $blue;
+        font-size: 29px;
+        line-height: 33px;
+        @extend %helvetica;
+    }
+}
+
+// Section-Call End
+
+
+.section-test{
+    overflow: hidden;
+
+    &__inner{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 53px;
+        padding: 72px 134px 103px 134px;
+    }
+    
+    &__item{
+        background: $blue;
+        border-radius: 20px;
+        .block{
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            padding: 22px 16px 16px 16px;
+            color: $white;
+            max-width: 253px;
+            max-height: 181px;
+            img{
+                align-self: flex-end;
+                width: 87px;
+                height: 87px;
+            }
+            &__title{
+                font-size: 14px;
+                line-height: 16px;
+                @extend %helvetica;
+                padding-bottom: 5px;
+            }
+            &__text{
+                font-size: 12px;
+                line-height: 133.5%;
+                @extend %helveticaNeue;
+                width: 221px;
+            }
+        }
+    }
+    .section-content{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0 134px 125px 134px;
+        position: relative;
+        z-index: 99;
+        &__img{
+            img{
+                width: 557px;
+                height: 416px;
+                object-fit: cover;
+            }
+        }
+        &__round{
+            background: #f1f1f1;
+            border-radius: 50%;
+            width: 478px;
+            height: 478px;
+            position: absolute;
+            z-index: -99;
+        }
+        &__item{
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            gap: 19px;
+            h2{
+                font-size: 20px;
+                line-height: 27px;
+                letter-spacing: -0.376923px;
+                color: $dark;
+                @extend %manropeBold;
+                padding-bottom: 28px;
+            }
+            .info{
+                h3{
+                    font-size: 20px;
+                    line-height: 27px;
+                    color: $blue;
+                    @extend %manropeRegular;
+                    padding-bottom: 3px;
+                }
+                p{
+                    font-size: 14px;
+                    line-height: 19px;
+                    @extend %manropeRegular;
+                    color: $dark;
+                    width: 539px;
+                }
+            }
+        }
+    }
+
+}
+
+// Section Test End
+
+
+.service{
+    &-top{
+        text-align: center;
+        padding-bottom: 83px;
+        h1{
+            font-size: 36px;
+            line-height: 64px;
+            color: $dark;
+            @extend %manropeSemiBold;
+            padding-bottom: 30px;
+        }
+        p{
+            font-size: 36px;
+            line-height: 64px;
+            @extend %manropeSemiBold;
+            color: $dark;
+        }
+    }
+    &-center{
+        padding-bottom: 91px;
+        &__inner{
+
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            align-content: center;
+            gap: 130px;
+            padding: 0 110px 0 135px;
+        }
+    }
+    &-item{
+        h2{
+            font-size: 24px;
+            line-height: 32px;
+            color: $black;
+            @extend %manropeRegular;
+            font-weight: 600;
+            padding-bottom: 20px;
+        }
+        p{
+            width: 286px;
+            font-size: 16px;
+            line-height: 26px;
+             color: $black;
+            @extend %manropeBold;
+            padding-bottom: 48px;
+        }
+        a{
+            font-size: 12px;
+            line-height: 16px;
+            color: $blue;
+            @extend %manropeBold;
+            position: relative;
+            &::after{
+                content: '';
+                position: absolute;
+                width: 15px;
+                height: 9px;
+                right: -23px;
+                background: url(../images/service-arrow.png);
+                top: 50%;
+                transform: translateY(-50%);
+            }
+            &:hover{
+                opacity: 0.7;
+            }
+        }
+    }
+    &-bottom{
+        text-align: center;
+        display: block;
+        width: 100px;
+        margin: auto;
+        font-size: 20px;
+        line-height: 30px;
+        color: $dark;
+        position: relative;
+        @extend %manropeBold;
+        &::after{
+            content: '';
+            position: absolute;
+            right: -34px;
+            top: 50%;
+            transform: translateY(-50%);
+            background: url(../images/service-black__arrow.png);
+            background-repeat: no-repeat;
+            width: 22px;
+            height: 13px; 
+        }
+        &:hover{
+            opacity: 0.7;
+        }
+    }
+}
+
+// Service End
+
+.special{
+    padding-bottom: 110px;
+    &-title{
+        line-height: 64px;
+        font-size: 36px;
+        color: $black;
+        @extend %manropeSemiBold;
+        text-align: center;
+        padding: 100px 0 40px 0;
+
+    }
+    &-inner{
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        gap : 26px;
+        flex-wrap: wrap;
+    }
+
+        &-item{
+            &__img{
+                width: 273px;
+                height: 338px;
+                object-fit: cover;
+            }
+    }
+    
+    &-item__info{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        h3{
+            font-size: 20px;
+            padding-top: 17px;
+            line-height: 27px;
+            letter-spacing: -0.376923px;
+            color: $dark;
+            @extend %manropeRegular;
+            padding-bottom: 11px;
+        }
+        span{
+            font-size: 16px;
+            line-height: 22px;
+            letter-spacing: -0.376923px;
+            color: $blue;
+            @extend %manropeBold;
+            padding-bottom: 10px;
+        }
+        
+    }
+    &-images{
+        display: flex;
+        justify-content: center;
+        align-content: center; 
+        gap: 23px;
+    }
+}
+
+// Section Special End
+
+.clients{
+   
+    position: relative;
+    margin-bottom: 100px;
+    &-title{
+        font-size: 36px;
+        line-height: 64px;
+        text-align: center;
+        color: $black;
+        @extend %manropeSemiBold;
+        padding-bottom: 15px;
+    }
+    &-text{
+        font-size: 18px;
+        line-height: 32px;
+        text-align: center;
+        color: $black;
+        @extend %manropeRegular;
+        padding-bottom: 80px;
+    }
+    .slider{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 60px;
+        padding: 0 135px;
+    }
+    &-slider{
+        padding-bottom: 16px;
+        display: flex !important;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+       gap: 5px;
+        &__info{
+            background: url(../images/slider-bg.png);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            min-width: 380px;
+            min-height: 205px;
+            h2{
+                width: 270px;
+                margin: auto;
+                font-size: 24px;
+                line-height: 32px;
+                text-align: center;
+                color: $black;
+                padding: 0 0 5px 0;
+                @extend %manropeRegular;
+            font-weight: 600;
+            }
+            p{
+                font-size: 14px;
+                line-height: 24px;
+                text-align: center;
+                color: $black;
+                @extend %manropeRegular;
+                width: 270px;
+                margin: auto;
+            }
+        }
+        
+    }
+    
+    .slick-dots{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+        margin-top: 20px;
+        button{
+            font-size: 0;
+            border: 1px solid $lightBlue;
+            background: $lightBlue;
+            border-radius: 50%;
+            cursor: pointer;
+            width: 8px;
+            height: 12px;
+            
+        }
+    }
+    .slick-active{
+        button{
+            border: 3px solid $lightBlue;
+            background: $white;
+            width: 14px;
+            height: 16px;
+        }
+    }
+   
+}
+
+.blog{
+    &-title{
+        font-size: 36px;
+        line-height: 64px;
+        text-align: center;
+        color: $dark;
+        @extend %manropeSemiBold;
+        padding-bottom: 10px;
+    }
+    &-text{
+        width: 540px;
+        margin: auto;
+        font-size: 18px;
+        line-height: 32px;
+        text-align: center;
+        color: $black;
+        @extend %manropeRegular;
+        padding-bottom: 43px;
+    }
+    &-inner{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        padding: 0 135px 85px 135px;
+        gap: 51px;
+        img{
+            width: 356px;
+            height: 179px;
+            object-fit: cover;
+        }
+    }
+    &-info{
+        display: flex;
+        align-items: center;
+        padding: 6px 0 4px 0;
+        gap: 15px;
+        span{
+            font-size: 12px;
+            line-height: 22px;
+            color: $lightBlue;
+            @extend %roboto;
+            border-right: 1px solid #eee;
+            padding-right: 50px;
+            white-space: nowrap;
+        }
+        h4{
+            font-size: 12px;
+            line-height: 14px;
+            @extend %roboto;
+            color: $lightDark;
+            border-right: 1px solid #eee;
+            padding-right: 15px;
+            white-space: nowrap;
+        }
+        h5{
+            font-size: 12px;
+            line-height: 14px;
+            @extend %roboto;
+            color: $lightDark;
+            position: relative;
+            padding-left: 22px;
+            border-right: 1px solid #eee;
+            padding-right: 15px;
+            &::before{
+                content: '';
+                position: absolute;
+                 background: url(../images/blog-chat.webp);
+                 width: 12px;
+                 height: 12px;
+                 left: 0;
+            }
+        }
+        h3{
+            font-size: 12px;
+            line-height: 14px;
+            @extend %roboto;
+            color: $lightDark;
+            position: relative;
+            padding-left: 22px;
+            &::before{
+                content: '';
+                position: absolute;
+                background: url(../images/blog-like.webp);
+                left: 0;
+                width: 12px;
+                height: 12px;
+            }
+        }
+    }
+     &-paragraph{
+         font-size: 18px;
+         line-height: 26px;
+         color: $dark;
+         @extend %manropeBold;
+         width: 355px;
+         padding-bottom: 20px;
+     }   
+     &-subtext{
+         font-size: 14px;
+         line-height: 21px;
+         color: $lightBlack;
+         @extend %manropeRegular;
+         width: 354px;
+     }
+}
+
+// Blog End
+
+.footer{
+    background: $blue;
+    &-inner{
+        display: flex;  
+        justify-content: center;
+        flex-wrap: wrap;
+        padding: 40px 0 60px 0;
+        gap: 150px;
+        color: $white;
+        @extend %manropeRegular;
+    }
+        &-item{
+            .footer-logo{
+                width: 146px;
+                height: 29px;
+                object-fit: contain;
+            }
+            .footer-title{
+                font-size: 20px;
+                line-height: 27px;
+                @extend %manropeRegular;
+                padding: 36px 0;   
+            }
+            .footer-text{
+                font-size: 20px;
+                line-height: 27px;
+                @extend %manropeRegular;
+                width: 427px;
+            }
+        }
+        &-time{
+            padding-bottom: 45px;
+
+            span{
+                font-size: 14px;
+                line-height: 19px;
+                padding-bottom: 10px;
+            }
+            &__subtitle{
+                font-size: 14px;
+                line-height: 19px;
+                padding-bottom: 45px;
+                width: 267px;
+            }
+            h4{
+                font-size: 12px;
+                line-height: 16px;
+                padding-bottom: 45px;
+            }
+            h5{
+                font-size: 12px;
+                line-height: 16px;
+            }
+        }
+        &-link{
+            &__title{
+                font-size: 20px;
+                line-height: 27px;
+                padding-bottom: 18px;
+            }
+            a{
+                display: block;
+                padding-bottom: 11px;
+                img{
+                    padding-right: 9px;
+                }
+            }
+        }
+        &-newsletter{
+            &__title{
+                font-size: 20px;
+                line-height: 27px;
+                padding-bottom: 18px;
+            }
+            &__text{
+                width: 267px;
+                font-size: 20px;
+                line-height: 27px;
+                padding-bottom: 25px;
+            }
+            .subscribe{
+                display: flex;
+                align-items: center;
+                width: fit-content;
+                color: #808080;
+                background: $white;
+                @extend %rubik;
+                input{
+                    border: none; 
+                    padding: 7px 0 7px 7px;
+                }
+                button{
+                    border: 1px solid $white;
+                    background: $blue;
+                    padding: 8px 5px 7px 9px;
+                    color: $white;
+                    cursor: pointer;
+                }
+            }
+        }
+}
+
+
+
+// <<!>> Home End<</!>> //
+
+
+        //About Start 
+
+
+
+.header{
+    .menu{
+        .link_active{
+            color: $blue;
+            &::before{
+                content: '';
+                background-color: #320ff5;
+            }
+        }
+    }
+}
+// Header End
+.about{
+    &-inner{
+    display: flex;
+    justify-content: center;
+    padding-top: 72px;
+    padding-bottom: 120px;
+    gap: 10px;
+    &__content{
+        img{
+            width: 475px;
+            height: 355px;
+            object-fit: cover;
+        }
+        h2{
+            font-size: 30px;
+            line-height: 64px;
+            color: $dark;
+            @extend %manropeSemiBold;
+        }
+        span{
+            font-size: 30px;
+            line-height: 64px;
+            color: $dark;
+            @extend %manropeSemiBold;
+            font-weight: 300; 
+        }
+        p{
+            width: 571px;
+            font-size: 16px;
+            line-height: 26px;
+        }
+    }
+    }
+    &-top{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 43px 0; 
+        background: $blue;
+        &__item{
+            h3{
+                font-size: 29px;
+                line-height: 33px;
+                color: $white;
+                @extend %helvetica;
+                padding-bottom: 11px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+        }
+    }
+}
+    &-links{
+        font-size: 16px;
+        line-height: 18px;
+        color: #222;
+        @extend %helvetica;
+        font-weight: normal;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+        a:hover{
+        color: $white;
+        transition: all 0.3s;
+        }
+    }
+    &-center{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 28px;
+        color: $dark;
+        margin-bottom: 106px;
+        background: #F0F6FB;
+        &__item{
+            h1{
+                font-size: 36px;
+                line-height: 64px;
+                @extend %manropeBold;
+            }
+            p{
+                width: 571px;
+                font-size: 16px;
+                line-height: 26px;
+                color: $black;
+                @extend %manropeRegular;
+            }
+            img{
+                width: 571px;
+                height: 519px;
+                object-fit: cover;
+            }
+        }
+    }
+}
+// About End
+.clinic{
+    &-top{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 20px;
+        color: $dark;
+        padding-bottom: 71px;
+        h1{
+            font-size: 36px;
+            line-height: 49px;
+            text-align: center;
+            @extend %manropeBold;
+        }
+        p{
+            width: 650px;
+            margin: auto;
+            font-size: 14px;
+            line-height: 16px;
+            text-align: center;
+            @extend %helvetica;
+        }
+    }
+    &-content{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 49px;
+        padding: 0 10px 66px 10px;
+        &__item{
+            color: $dark;
+            h4{
+                font-size: 14px;
+                line-height: 16px;
+                color: $lightBlue;
+                @extend %helvetica;
+                font-weight: 700;
+                padding-bottom: 11px;
+            }
+            p{
+                width: 260px;
+                font-weight: 300;
+                font-size: 12px;
+                line-height: 133.5%;
+                @extend %helvetica;
+            }
+        }
+    }
+}
+.doctors{
+    .about-links{
+        display: flex;
+        justify-content: center;
+        gap: 5px;
+    }
+    .about-inner{
+        align-items: center;
+        gap: 54px;
+        padding-bottom: unset;
+        &__content{
+            img{
+                width: 525px;
+                height: 454px;
+                object-fit: cover;
+            }
+        }
+    }
+}
+.sliders{
+    .special-inner{
+        padding: 0 131px;
+        gap: 30px;
+    }
+}
+.blog-main{
+    padding: 49px 0 60px 0;
+    .blog-inner{
+        padding: unset;
+        align-items: unset;
+        img{
+            width: 501px;
+            height: 342px;
+            object-fit: cover;
+        }
+    }
+    .blog-paragraph{
+        padding-bottom: 5px;
+        width: 642px;
+        font-size: 26px;
+        line-height: 26px;
+        color: $dark;
+        @extend %manropeBold;
+    }
+    .blog-subtext{
+        width: unset;
+        p{
+            width: 640px;
+            font-size: 14px;
+            line-height: 21px;
+            color: $lightBlack;
+            @extend %manropeRegular;
+            padding-bottom: 27px;
+        }
+        h3{
+            width: 640px;
+            font-size: 14px;
+            line-height: 21px;
+            color: $lightBlack;
+            @extend %manropeRegular;  
+        }
+        &__content{
+            color: $blue;
+            @extend %manropeBold;
+        }
+    }
+}
+.center{
+    .blog-inner{
+        padding: 0 172px 90px 172px;
+    }
+}
+.address{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 150px;
+    margin-top: 64px;
+    &-item{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        &__img{
+            width: 20px;
+            height: 20px;
+            object-fit: cover;
+            margin-bottom: 10px;
+        }
+        &__title{
+            font-size: 24px;
+            line-height: 35px;
+            color: $dark;
+            @extend %roboto;
+            font-weight: 600;
+        }
+        p{
+            font-size: 14px;
+            line-height: 21px;
+            color: $lightBlack;
+            @extend %roboto;
+            span{
+                color: #FAAD3D;
+                @extend %roboto;
+                font-weight: 700;
+            }
+        }
+    }
+}
+.google-map{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 84px;
+}
+.get{
+    margin-top: 40px;
+    &-title{
+        font-size: 36px;
+        line-height: 49px;
+        text-align: center;
+        color: $dark;
+        @extend %manropeBold;
+    }
+    .get-form{
+        padding: 50px 0;
+        width: 60%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        label{
+            margin-bottom: 13px;
+            display: block;
+            line-height: 16px;
+            font-size: 14px;
+            color: $lightBlack;
+            @extend %roboto;
+        }
+        &__item{
+            display: flex;
+            flex-direction: column;
+            &:first-child{
+                flex-direction: unset;
+                gap: 30px;
+            }
+        }
+        &__box{
+            width: 100%;
+        }
+        &__input{
+            height: 50px;
+            border-radius: 5px;
+            background: #F6F6F6;
+            border: none;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-left: 17px;
+        }
+        &__area{
+            resize: none;
+            height: 150px;
+        }
+        &__btn{
+            width: 173px;
+            height: 48px;
+            margin: auto;
+            background: $blue;
+            color: $white;
+            font-size: 16px;
+            line-height: 19px;
+            font-weight: 500;
+            @extend %roboto;
+            border: none;
+            border-radius: 5px;
+            transition: all 0.3s;
+            &:hover{
+                opacity: 0.7;
+            }
+        }
+    }
+}
+.contact{
+    padding-top: 40px;
+}
+
+
+
+
+
+
+
+
+
+@import 'media';

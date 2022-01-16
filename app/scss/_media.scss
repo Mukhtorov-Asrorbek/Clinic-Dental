@@ -1,0 +1,1582 @@
+@media (max-width: 1600px){
+    .footer{
+        &-inner{
+            gap: 37px;
+        }
+    }
+}
+@media (max-width: 1440px){
+.section-dental{
+    margin-bottom: 0;
+    &__img{
+        display: none;
+    }
+}
+.service-center{
+    &__inner{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        padding: unset;
+    }
+}
+.blog{
+    &-inner{
+    padding: 0 80px 85px 80px;
+    gap: 39px;
+}
+}
+.sliders{
+    .special-inner{
+        padding: 0;
+    }
+}
+.footer{
+    &-inner{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+}
+@media (max-width: 1240px){
+    .section-test{
+        &__inner{
+            padding-left: 0;
+            padding-right: 0;
+            flex-wrap: wrap;
+        }
+        .section-content{
+            padding: 0 86px 125px 134px;
+            &__img{
+                img{
+                    width: 502px;
+                    height: 416px;
+                }
+            }
+        }
+    }
+    .service{
+        &-top{
+            h1{
+                font-size: 32px;
+                padding-bottom: 10px;
+                line-height: 20px;
+            }
+            p{
+                font-size: 32px;
+            }
+        }
+        &-center{
+            &__inner{
+                gap: 70px;
+            }
+        }
+    }
+    .clients{
+        &-slide{
+            padding-left: 102px;
+            gap: unset !important;
+        }
+        .slick-dots{
+            transform: translateX(0);
+        }
+    }
+    .blog{
+        &-inner{
+        padding: 0 30px 85px 30px;
+    }
+    }
+    .about{
+        &-top{
+            &__item{
+                h3{
+                    font-size: 25px;
+                    line-height: 25px;
+                }
+            }
+        }
+        &-inner{
+            &__content{
+                h2{
+                    font-size: 28px;
+                }
+                span{
+                    font-size: 28px;
+                }
+            }
+        }
+        &-center{
+            &__item{
+                h1{
+                    font-size: 32px;
+                    line-height: 60px;
+                }
+                img{
+                    width: 500px;
+                    height: 500px;
+                }
+            }
+        }
+    }
+    .clinic{
+        &-top{
+            h1{
+                font-size: 32px;
+            }
+        }
+    }
+    .special{
+        &-title{
+            padding-top: 50px;
+            font-size: 32px;
+        }
+    }
+    .blog-main{
+        .blog-inner{
+            flex-direction: column;
+            align-items: center;
+        }
+        .blog-paragraph{
+            width: 550px;
+            font-size: 24px;
+        }
+        .blog-subtext{
+            p{
+                width: 550px;
+            }
+            h3{
+                width: 500px;
+            }
+        }
+    }
+    .get{
+        &-title{
+            font-size: 33px;
+        }
+    }
+}
+@media (max-width: 1125px){
+    .about{
+        &-inner{
+            flex-direction: column;
+            align-items: center;
+        }
+        &-center{
+            flex-direction: column;
+            &__item{
+                img{
+                    width: 564px;
+                }
+            }
+        }
+    }
+    .blog-main{
+        .blog-inner{
+            img{
+                margin-right: 45px;
+            }
+        }
+    }
+}
+@media (max-width: 1034px){
+    .header{
+        justify-content: unset;
+        gap: 132px;
+        max-width: 1200px;
+        position: relative;
+        .menu{
+        visibility: hidden;
+        opacity: 0;
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+       transition: all 0.3s;
+       transform: translateY(-100%);
+        &_active{
+            visibility: visible;
+            opacity: 1;
+            background: #f2f2f2;
+            z-index: 999;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 25px;
+            overflow: hidden;
+            transform: translateY(0);
+        }
+        a{
+            font-size: 25px;
+        }
+        }   
+        .menu-btn{
+            display: block;
+            width: 57px;
+            height: 48px;
+            border: 1px solid #000;
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 6px;
+            border-radius: 5px;
+            transition: all 0.3s;
+            position: absolute;
+            right: 100px;
+            z-index: 99999;
+            transition: all 0.3s;
+            &:hover, &_active{
+                background: rgb(145, 139, 139);
+
+                .menu-btn__line{
+                    background: #fff;
+                }
+            }
+            &_active{
+                position: fixed;
+                overflow: hidden;
+            }
+            
+            &:hover .menu-btn__line{
+                background: #fff;
+            }
+            
+            &__line{
+                height: 2px;
+                width: 60%;
+                background: #000;
+                transition: all 0.3s;
+              
+            }
+
+            &_active{
+                .menu-btn__line_1{
+                    transform: rotate(45deg) translateY(4px) translateX(5px);
+                }
+                .menu-btn__line_2{
+                    transform: translateX(100%);
+                    opacity: 0;
+                    width: 0;
+                    height: 0;
+                }
+                .menu-btn__line_3{
+                    transform: rotate(135deg) translateY(4px) translateX(-5px);
+                }
+            }
+        }
+    }
+    .section-dental{
+        padding-top: 73px;
+        &__link{
+            font-size: 14px;
+        }
+    }
+    .section-test{
+        .section-content{
+            padding-right: 120px;
+            &__round{
+                width: 378px;
+                height: 378px;
+            }
+            &__item{
+                h2{
+                    width: fit-content;
+                }
+                .info{
+                    p{
+                        width: 407px;
+                    }
+                }
+            }
+        }
+    }
+    .service{
+        &-top{
+            padding-bottom: 50px;
+            
+        }
+    }
+    .special{
+        padding-bottom: 70px;
+    }
+   .footer{
+       &-inner{
+           display: grid;
+           grid-template-columns: repeat(2,1fr);
+           padding-left: 100px;
+       }
+   }
+   .about{
+       &-top{
+           padding: 31px 0;
+       }
+   }
+   .doctors{
+       .about-inner{
+           &__content{
+               img{
+                   width: 450px;
+                   height: 430px;
+                   margin-right: 100px;
+               }
+           }
+       }
+   }
+   .google-map{
+    iframe{
+        height: 500px;
+    }
+   }
+   .get{
+       .get-form{
+           width: 70%;
+           &__area{
+               height: 100px;
+           }
+       }
+   }
+}
+
+
+@media (max-width: 978px){
+    .section-test{
+        .section-content{
+            padding: unset;
+            flex-direction: column-reverse;
+            &__img{
+                img{
+                    width: 432px;
+                    height: 358px;
+                }
+            }
+        }
+    }
+    .special{
+        &-title{
+            font-size: 28px;
+            padding-top: 10px;
+        }
+        &-item{
+            &__img{
+                width: 260px;
+                height: 297px;
+                object-fit: cover;
+            }
+        }
+    }
+    .clients{
+        margin-bottom: 100px;
+        &-slide{
+            padding-left: unset;
+            width: 100%;
+            display: unset;
+        }
+        .slick-dots{
+            right: unset;
+            top: 50px;
+        }
+
+        &-title{
+            font-size: 27px;
+            line-height: 15px;
+        }
+        &-slider{
+            &__info{
+                h2{
+                    font-size: 21px;
+                    line-height: 27px;
+                }
+            }
+            span{
+                font-size: 14px;
+            }
+        }
+        &-name{
+            font-size: 16px;
+        }
+        .slick-active button{
+            border: 2px solid #2269F9;
+            width: 15px;
+            height: 15px;
+        }
+    }
+    .blog{
+        &-title{
+            font-size: 27px;
+        }
+        &-text{
+            width: 442px;
+            line-height: 24px;
+        }
+    }
+    .footer{
+        &-inner{
+            padding-left: 70px;
+            padding-right: 50px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 45px;
+        }
+        
+        &-item{
+            .footer-title{
+                font-size: 20px;
+                line-height: 27px;
+            }
+            .footer-text{
+                font-size: 18px;
+                line-height: 25px;
+                width: 408px;
+            } 
+        }
+        
+    }
+    .about{
+        &-center{
+            margin-bottom: 70px;
+        }
+    }
+    .doctors{
+        .about-inner{
+            padding-bottom: 30px;
+            &__content{
+                img{
+                    width: 400px;
+                    height: 350px;
+                    margin-right: 150px;
+                }
+            }
+        }
+    }
+    .blog-main{
+        .blog-inner{
+            gap: 25px;
+            img{
+                width: 450px;
+                height: 300px;
+                margin-right: 96px;
+            }
+        }
+        .blog-paragraph{
+            width: 542px;
+            font-size: 23px;
+        }
+    }
+    .address{
+        gap: 120px;
+        padding: 0 10px;
+        &-item{
+            &__title{
+                font-size: 23px;
+            }
+        }
+    }
+    .google-map{
+        margin-top: 60px;
+    }
+    .get{
+        &-title{
+            font-size: 30px;
+        }
+    }
+}
+
+@media (max-width: 878px){
+    .header{
+        padding: 26px 108px;
+        max-width: unset;
+        &-logo{
+            img{
+                width: 130px;
+                height: 22px;
+            }
+        }
+        .menu{
+            gap: 20px;
+            a{
+                font-size: 22px;
+            }
+        }
+        .menu-btn{
+            width: 55px;
+            height: 43px;
+            &__line{
+                width: 56%;
+            }
+        }
+   }
+    .section-dental{
+        &__title{
+            font-size: 23px;
+            line-height: 29px;
+        }
+        &__text{
+            font-size: 36px;
+            line-height: 39px;
+        }
+        &__link{
+            font-size: 18px;
+        }
+   }
+    .blog{
+        &-inner{
+            padding-bottom: 60px;
+        }
+   }
+   .footer{
+       &-inner{
+           flex-direction: column;
+           max-width: 350px;
+           margin: auto;
+           padding-left: unset;
+           padding-right: unset;
+       }
+       &-item{
+           .footer-title{
+               font-size: 18px;
+               padding: 26px 0;
+           }
+           .footer-text{
+            font-size: 17px;
+            line-height: 23px;
+            width: 336px;
+        }
+       }
+       &-time{
+           padding-bottom: 0;
+           &__subtitle{
+               padding-bottom: 20px;
+           }
+           h4{
+               padding-bottom: 20px;
+           }
+       }
+       &-link{
+           &__title{
+               font-size: 18px;
+               padding-bottom: 18px;
+           }
+       }
+       &-newsletter{
+           &__title{
+               font-size: 18px;
+               padding-bottom: 18px;
+           }
+           &__text{
+               font-size: 17px;
+               line-height: 24px;
+           }
+       }
+   }
+   .about{
+       &-top{
+           &__item{
+               h3{
+                   font-size: 22px;
+                   padding-bottom: 4px;
+               }
+           }
+       }
+       &-inner{
+           padding-top: 30px;
+           padding-bottom: 70px;
+           &__content{
+               h2{
+                   font-size: 27px;
+                   line-height: 44px;
+               }
+               span{
+                   font-size: 27px;
+               }
+           }
+       }
+       &-center{
+           &__item{
+               h1{
+                   font-size: 27px;
+               }
+               img{
+                   width: 450px;
+                   margin-right: 120px;
+               }
+           }
+       }
+   }
+   .clinic{
+    &-top{
+        padding-bottom: 60px;
+        h1{
+            font-size: 27px;
+        }
+    }
+   }
+    .special{
+    &-title{
+        font-size: 27px;
+    }
+   }
+   .google-map{
+    margin-top: 40px;
+   }
+   .get{
+    &-title{
+        font-size: 26px;
+    }
+}
+}
+@media (max-width: 786px){
+    .header{
+        padding: 26px 117px;
+        gap: 93px;
+        .menu-btn{
+            right: 67px;
+        }
+    }
+    .section-dental{
+        padding-bottom: 15px;
+        
+        &__title{
+            font-size: 22px;
+            line-height: 29px;
+            padding-bottom: 8px;
+        }
+        &__text{
+            font-size: 24px;
+            line-height: 28px;
+            padding-bottom: 8px;
+        }
+        &__subtext{
+            font-size: 16px;
+            line-height: 26px;
+        }
+        &__link{
+            font-size: 15px;
+            padding: 15px 25px;
+        }
+    }
+    .section-call{
+        padding: 42px 38px;
+        span{
+            font-size: 23px;
+        }
+    }
+    .section-test{
+        &__inner{
+            gap:40px;
+        }
+    }
+    .service{
+        &-top{
+            padding-bottom: 30px;
+            h1{
+                font-size: 20px;
+                padding-bottom: 0px;
+                line-height: 10px;
+            }
+            p{
+                font-size: 20px;
+                line-height: 64px;
+            }
+        }
+        &-item{
+            h2{
+                font-size: 20px;
+                line-height: 32px;
+                padding-bottom: 15px;
+            }
+            p{
+                font-size: 14px;
+                line-height: 23px;
+                padding-bottom: 30px;
+                width: 254px;
+            }
+        }
+        &-center{
+            padding-bottom: 60px;
+            &__inner{
+                gap: 40px;
+            }
+        }
+        &-bottom{
+            font-size: 18px;
+        }
+    }
+    .special{
+        &-title{
+            padding-top: 0px;
+            font-size: 25px;
+        }
+        &-item{
+            &__img{
+                width: 240px;
+                height: 276px;
+            }
+            &__info{
+                h3{
+                    font-size: 17px;
+                }
+                span{
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+    .clients{
+        margin-bottom: 90px;
+        &-title{
+            font-size: 25px;
+            line-height: 15px;
+        }
+        &-text{
+            font-size: 17px;
+            line-height: 32px;
+            padding-bottom: 45px;
+        }
+        &-slider{
+            &__info{
+                h2{
+                    font-size: 19px;
+                }
+            }
+        }
+    }
+    .blog{
+        &-title{
+            font-size: 25px;
+            line-height: 20px;
+        }
+        &-text{
+            width: 442px;
+            line-height: 24px;
+            font-size: 17px;
+        }
+    }
+    .clinic{
+        &-top{
+            padding-bottom: 40px;
+        }
+    }
+    .doctors{
+        .about-inner{
+            gap: 34px;
+            &__content{
+                img{
+                    width: 350px;
+                    height: 324px;
+                    margin-right: 210px;
+                }
+            }
+        }
+    }
+    .blog-main{
+        .blog-inner{
+            img{
+                width: 400px;
+                height: 270px;
+            }
+        }
+        .blog-paragraph{
+            width: 494px;
+            font-size: 21px;
+        }
+        .blog-subtext{
+            p{
+                width: 495px;
+            }
+            h3{
+            width: 495px;
+            }
+        }
+    }
+    .address{
+        padding: 0 20px;
+        gap: 70px;
+        &-item{
+            &__title{
+                font-size: 22px;
+            }
+        }
+    }
+    .google-map{
+        iframe{
+            height: 400px;
+        }
+    }
+    .get{
+        margin-top: 35px;
+        &-title{
+            font-size: 23px;
+        }
+        .get-form{
+            padding: 35px 0;
+            &__area{
+                height: 70px;
+            }
+            &__item:first-child{
+                flex-direction: column;
+                gap: 15px;
+            }
+            &__btn{
+                width: 140px;
+            }
+        }
+    }
+}
+
+
+@media (max-width: 680px){
+    .header{
+        padding-left: 40px;
+        flex-direction: column;
+        padding-right: 0;
+        gap: 24px;
+        align-items: unset;
+        &-links{
+            justify-content: unset;
+        }
+    }
+    .section-dental{
+        margin-bottom: 65px;
+        padding-top: 44px;
+        padding-left: 40px;
+        &__title{
+            font-size: 20px;
+            line-height: 20px;
+        }
+        &__text{
+            font-size: 27px;
+            line-height: 30px;
+            width: 346px;
+        
+        }
+        &__subtext{
+            width: 372px;
+        }
+    }
+    .section-call{
+        padding: 35px 0 35px 0;
+
+        span{
+            font-size: 23px;
+        }
+    }
+    .section-test{
+        &__inner{
+            gap: 25px;
+            padding-bottom: 60px;
+        }
+        &__item{
+            .block{
+                max-width: 245px;
+                max-height: 166px;
+            }
+            
+            }
+        
+        .section-content{
+            &__item{
+                h2{
+                    font-size: 18px;
+                    padding-bottom: 10px;
+                }
+                .info{
+                    h3{
+                        font-size: 18px;
+                        line-height: 22px;
+                        width: fit-content;
+                        padding-bottom: 12px;
+                    }
+                    p{
+                        font-size: 13px;
+                        line-height: 18px;
+                    }
+            }
+        }
+        &__round{
+            width: 300px;
+            height: 300px;
+        }
+    }
+}
+    .special{
+        &-title{
+            font-size: 22px;
+            padding-bottom: 35px;
+        }
+    }
+    .clients{
+        margin-bottom: 80px;
+        &-title{
+            font-size: 22px;
+            line-height: 0px;
+        }
+        &-text{
+            font-size: 16px;
+            line-height: 29px;
+
+        }
+        &-slider{
+            gap: 5px;
+            &__info{
+                min-width: 363px;
+                min-height: 141px;
+                h2{
+                    font-size: 15px;
+                    padding-top: 5px;
+                    line-height: 27px;
+                }
+                p{
+                    font-size: 13px;
+                    line-height: 22px;
+                }
+                img{
+                    width: 45px;
+                    height: 45px;
+                }
+            }
+            span{
+                font-size: 13px;
+            }
+        }
+        &-name{
+            font-size: 15px;
+        }
+
+    }
+    .body{
+        overflow-x: hidden;
+    }
+    .slick-slide img{
+        width: 45px;
+        height: 45px;
+    }
+    .blog{
+        &-inner{
+            img{
+                width: 300px;
+                height: 140px;
+            }
+        }
+        &-title{
+            font-size: 22px;
+        }
+        &-text{
+            width: 442px;
+            line-height: 20px;
+            font-size: 16px;
+        }
+        &-info{
+            gap: 8px;
+        }
+        &-paragraph{
+            font-size: 14px;
+            line-height: 21px;
+            width: 291px;
+            padding-bottom: 18px;
+        }
+        &-subtext{
+            width: 300px;
+            line-height: 20px;
+            font-size: 13px;
+        }
+    }
+    .footer{
+        &-inner{
+            max-width: 292px;
+        }
+        &-item{
+            .footer-logo{
+                width: 110px;
+                height: 25px;
+            }
+            .footer-text{
+                font-size: 15px;
+                line-height: 22px;
+                width: 279px;
+            }
+        }
+        &-newsletter{
+           &__text{
+               font-size: 15px;
+               line-height: 23px;
+           } 
+        }
+    }
+    .about{
+        &-top{
+            padding: 20px 0;
+            &__item{
+                h3{
+                    font-size: 18px;
+                    padding-bottom: 0;
+                }
+            }
+        }
+        &-inner{
+            &__content{
+                h2{
+                    font-size: 25px;
+                    text-align: center;
+                }
+                span{
+                    font-size: 25px;
+                    text-align: center;
+                    display: block;
+                }
+                p{
+                    width: 450px;
+                    font-size: 15px;
+                    line-height: 24px;
+                }
+                img{
+                    width: 400px;
+                    height: 310px;
+                }
+            }
+            
+        }
+        &-center{
+            &__item{
+                h1{
+                    font-size: 25px;
+                    text-align: center;
+                }
+                p{
+                    width: 450px;
+                    font-size: 15px;
+                }
+                img{
+                    width: 400px;
+                    height: 390px;
+                    margin-right: 47px;
+                }
+            }
+        }
+    }
+    .clinic{
+        &-top{
+            h1{
+                font-size: 25px;
+            }
+            p{
+                width: 550px;
+            }
+        }
+    }
+    .special{
+        &-title{
+            font-size: 25px;
+        }
+    }
+    .doctors{
+        .about-inner{
+            &__content{
+                img{
+                    margin-right: 100px;
+                }
+            }
+        }
+    }
+    .blog-main{
+        .blog-inner{
+            img{
+                margin: auto;
+            }
+        }
+        .blog-paragraph{
+            width: 431px;
+            font-size: 19px;
+            text-align: center;
+        }
+        .blog-info{
+            margin-left: 15px;
+        }
+        .blog-subtext{
+            p{
+                width: 408px;
+                margin: auto;
+            }
+            h3{
+                width: 408px;
+                margin: auto;
+            }
+        }
+    }
+    .center{
+        .blog-inner{
+            padding-bottom: 50px;
+        }
+    }
+    .google-map{
+        iframe{
+            height: 340px;
+        }
+    }
+}
+
+@media (max-width: 630px){
+.body{
+    overflow-x: unset;
+}
+.blog{
+    &-text{
+        width: unset;
+        padding-left: 20px;
+        padding-right: 20px;
+        font-size: 15px;
+    }
+}
+.clients{
+    margin-bottom: 20px;
+    &-slider{
+        h3{
+            font-size: 13px;
+        }
+        span{
+            font-size: 12px;
+        }
+    }
+}
+.about{
+    &-inner{
+        padding-bottom: 40px;
+        &__content{
+            h2{
+                font-size: 23px;
+                line-height: 30px;
+            }
+            span{
+                font-size: 23px;
+            }
+            
+        }
+    }
+    &-center{
+        margin-bottom: 40px;
+        &__item{
+            h1{
+                font-size: 23px;
+                text-align: center;
+            }
+            
+        }
+    }
+}
+.clinic{
+    &-top{
+        h1{
+            font-size: 23px;
+        }
+        p{
+            width: 450px;
+        }
+    }
+    &-content{
+        gap: 28px;
+        padding-bottom: 30px;
+    }
+}
+.special{
+    &-title{
+        font-size: 23px;
+    }
+}
+.doctors{
+    .about-inner{
+        &__content{
+            img{
+                margin-right: 128px;
+                width: 315px;
+                height: 300px;
+            }
+            h2{
+                padding-bottom: 15px;
+            }
+        }
+    }
+}
+.blog-main{
+    padding-top: 35px;
+    .blog-inner{
+        gap: 15px;
+        img{
+            margin: auto;
+            width: 350px;
+            height: 240px;
+        }
+    }
+    .blog-paragraph{
+        width: 384px;
+        font-size: 17px;
+        line-height: 20px;
+        margin: auto;
+    }
+    .blog-info{
+        margin-left: 32px;
+    }
+    .blog-subtext{
+        p{
+            width: 349px;
+        }
+        h3{
+            width: 349px;
+        }
+    }
+}
+.address{
+    margin-top: 40px;
+    gap: 55px;
+    &-item{
+        &__title{
+            font-size: 21px;
+            line-height: 30px;
+        }
+    }
+}
+}
+
+@media (max-width: 500px){
+    .header{
+        padding-left: 11px;
+        padding-right: 100px;
+        .menu-btn{
+            width: 48px;
+            height: 38px;
+            right: 30px;
+            &__line{
+                width: 56%;
+            }
+        }
+    }
+    .section-dental{
+        margin-bottom: 55px;
+        padding-left: unset;
+        padding-right: unset;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &__title{
+            font-size: 16px;
+            line-height: 20px;
+            text-align: center;
+        }
+        &__text{
+            font-size: 16px;
+            line-height: 25px;
+            text-align: center;
+        }
+        &__subtext{
+            font-size: 14px;
+            line-height: 21px;
+            text-align: center;
+        }
+        &__link{
+            padding: 11px 13px;
+            font-size: 12px;
+            display: block;
+            width: fit-content;
+            margin: auto;
+        }
+    }
+    .section-call{
+        padding: 22px 0;
+        span{
+            font-size: 16px;
+        }
+    }
+    .service{
+        &-top{
+            h1{
+                font-size: 16px;
+            }
+            p{
+                font-size: 16px;
+                line-height: 34px;
+            }
+        }
+        &-item{
+            h2{
+                font-size: 17px;
+                line-height: 32px;
+                padding-bottom: 10px;
+            }
+            p{
+                font-size: 13px;
+                line-height: 21px;
+                padding-bottom: 7px;
+            }
+        }
+    }
+    .special{
+        &-title{
+            font-size: 18px;
+            padding-top: 0px;
+            padding-bottom: 30px;
+        }
+    }
+    .clients{
+        &-title{
+            font-size: 18px;
+            line-height: 0px;
+        }
+        &-text{
+            font-size: 14px;
+            line-height: 22px;
+            padding-bottom: 30px;
+        }
+        &-slider{
+            &__info{
+                min-width: 334px;
+                min-height: 123px;
+                h2{
+                    font-size: 14px;
+                    line-height: 18px;
+                }
+                p{
+                    font-size: 12px;
+                    line-height: 18px;
+                    padding: 0 5px;
+                }
+            }
+        }
+    }
+    .blog{
+        &-title{
+            font-size: 18px;
+        }
+    }
+    .about{
+       &-inner{
+           &__content{
+            p{
+                width: 400px;
+            }
+            img{
+                width: 330px;
+                height: 242px;
+            }
+           }
+       } 
+       &-center{
+           margin-bottom: 20px;
+           &__item{
+               p{
+                   width: 400px;
+               }
+               img{
+                   width: 345px;
+                   height: 330px;
+               }
+           }
+       }
+    }
+    .clinic{
+        &-top{
+            gap: 10px;
+            
+            p{
+                width: 350px;
+            }
+        }
+        &-content{
+            padding-bottom: 0px;
+        }
+    }
+    .doctors{
+        .about-inner{
+            &__content{
+                img{
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+    .blog-main{
+        .blog-inner{
+            img{
+                width: 320px;
+                height: 200px;
+
+            }
+        }
+        .blog-paragraph{
+            width: 336px;
+            font-size: 15px;
+        }
+        .blog-info{
+            margin-left: 15px;
+        }
+        .blog-subtext{
+            p{
+                width: 316px;
+            }
+            h3{
+                width: 316px;
+            }
+        }
+    }
+    .google-map{
+        iframe{
+            height: 300px;
+        }
+    }
+}
+
+@media (max-width: 420px){
+    .section-dental{
+        &__title{
+            font-size: 16px;
+        }
+        &__text{
+            width: 285px;
+            font-size: 14px;
+            line-height: 19px;
+        }
+        &__subtext{
+            width: 310px;
+            font-size: 13px;
+        
+        }
+    }
+  .section-call{
+      padding: 17px 0;
+      span{
+          font-size: 15px;
+      }
+  }  
+  .section-test{
+      .section-content{
+
+          &__round{
+              bottom: 82px;
+          }
+          &__img{
+              img{
+                  width: 407px;
+                  height: 284px;
+                  padding-left: 61px;
+              }
+          }
+          &__item{
+              h2{
+                  text-align: center;
+                  margin: auto;
+                  padding-left: 10px;
+              }
+              .info{
+                  h3{
+                      margin: auto;
+                  }
+                  p{
+                      padding: 0 87px;
+                  }
+              }
+          }
+      }
+  }
+  .special{
+      font-size: 15px;
+      padding-top: 15px;
+      padding-bottom: 15px;
+      &-title{
+          font-size: 17px;
+      }
+      &-inner{
+          padding-bottom: 35px;
+      }
+  }
+  .about{
+      &-inner{
+          &__content{
+              p{
+                  width: 300px;
+                  font-size: 14px;
+                  line-height: 23px;
+              }
+              h2{
+                  font-size: 21px;
+                  line-height: 20px;
+              }
+              span{
+                  font-size: 21px;
+              }
+              img{
+                  width: 300px;
+                  height: 217px;
+              }
+          }
+      }
+      &-center{
+          &__item{
+              h1{
+                  font-size: 21px;
+              }
+              p{
+                  width: 300px;
+                  font-size: 14px;
+              }
+              img{
+                  width: 298px;
+                  height: 276px;
+                  margin: 0;
+              }
+          }
+      }
+  }
+  .clinic{
+    &-top{
+        h1{
+            font-size: 21px;
+        }
+        p{
+            width: 300px;
+        }
+    }
+}
+.sliders{
+    .special-inner{
+        padding-bottom: 20px;
+    }
+}
+.doctors{
+    .about-inner{
+        padding-bottom: 0;
+        &__content{
+            img{
+                width: 280px;
+                height: 290px;
+            }
+        }
+    }
+}
+.blog-main{
+    .blog-info{
+        img{
+            width: 300px;
+            height: 190px;
+        }
+        .blog-paragraph{
+            font-size: 14px;
+            width: unset;
+            span{
+                margin-right: 25px;
+            }
+        }
+        .blog-subtext{
+            p{
+                width: 293px;
+            }
+            h3{
+                width: 293px;
+            }
+        }
+    }
+}
+}
